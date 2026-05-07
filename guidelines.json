@@ -1,0 +1,198 @@
+{
+  "ios": [
+    {
+      "id": 1,
+      "title": "Xcode Project Checks",
+      "description": "Ensure your Xcode project is ready for production.",
+      "details": "Hide debug logs/features (#if DEBUG). Complete onboarding with no placeholder data. Set proper Custom iOS Target Properties in Info tab (encryption YES/NO, location/camera prompts). Bundle ID must match App Store Connect. Test state restoration, error handling, iCloud prod schema. Add StoreKitConfiguration to Schema, PrivacyInfo file, AppIcon, AccentColor. Setup Display Name, version, category in General tab.",
+      "resources": [],
+      "status": "pending"
+    },
+    {
+      "id": 2,
+      "title": "Mobile App Settings (Kuika)",
+      "description": "Configure the core identity of your app in Kuika.",
+      "details": "Enter App Name, Bundle ID (e.g., com.workspaceadi.app), Version (e.g., 1.0.0), and specify if Haptic features are Enabled.",
+      "resources": [],
+      "status": "pending"
+    },
+    {
+      "id": 3,
+      "title": "Apple Sign In Settings (Kuika)",
+      "description": "Configure Apple login credentials.",
+      "details": "Add New in Configuration menu. Enter a Name, your Team ID from the Apple Developer portal, and install the Sign In Certificate downloaded from your Apple account.",
+      "resources": [],
+      "status": "pending"
+    },
+    {
+      "id": 4,
+      "title": "App Store Settings (Kuika)",
+      "description": "Set up your App Store Connect API keys and certs in Kuika.",
+      "details": "Click ADD NEW from the Configuration menu. Provide your Issuer ID, Apple ID, Content Provider ID, Team ID, Publish Type (TestFlight, Appetize, ipa) and Connect Certificate (.P8 file).",
+      "resources": [],
+      "status": "pending"
+    },
+    {
+      "id": 5,
+      "title": "Register App ID (Apple Developer)",
+      "description": "Create your App ID in the Apple Developer account.",
+      "details": "Sign in to Apple Developer, go to Identifiers > +, click APP IDs > Continue. Enter the exact Bundle ID used in Kuika, a Description, select required App Capabilities, and click Register.",
+      "resources": [],
+      "status": "pending"
+    },
+    {
+      "id": 6,
+      "title": "App Store Connect: App Identity",
+      "description": "Set Name, Subtitle, Category and Keywords.",
+      "details": "Write descriptive Name (max 30 chars, must include Xcode Display Name), Subtitle (max 30 chars) explicitly targeting keywords. Optimize Keywords (no spaces after commas, no duplicate words in Name/Subtitle). Fill Main Category & Subcategory.",
+      "resources": [],
+      "status": "pending"
+    },
+    {
+      "id": 7,
+      "title": "App Store Connect: Descriptions & URLs",
+      "description": "Add Description, Support & Privacy URLs.",
+      "details": "Add an accurate Description. If using Apple's Standard EULA, include its link in the description. The Support URL MUST lead to a functional webpage with support info (not just a social media profile). Add Copyright info.",
+      "resources": [],
+      "status": "pending"
+    },
+    {
+      "id": 8,
+      "title": "Screenshots & Assets",
+      "description": "Upload screenshots for all supported devices.",
+      "details": "Must show actual app functionality. IMPORTANT: Remove any non-iOS status bars from screenshots! Do not use terms like 'Kids' in metadata/screenshots unless you select 'Made for Kids' rating. Avoid generic words like 'FREE'.",
+      "resources": [],
+      "status": "pending"
+    },
+    {
+      "id": 9,
+      "title": "Pricing & Availability",
+      "description": "Set pricing, regions, and release type.",
+      "details": "Choose Free or Paid. Select countries, mindful of restrictions (e.g., AI in China). Add/configure all initial in-app purchases and subscriptions. Choose manual or automatic release.",
+      "resources": [],
+      "status": "pending"
+    },
+    {
+      "id": 10,
+      "title": "Privacy, Rating & Compliance",
+      "description": "Privacy Policy, Age Rating, ATT & Subscriptions.",
+      "details": "App Tracking Transparency (ATT): Use native prompt BEFORE tracking data; custom pre-prompts are forbidden. For subscriptions, UI must display title, length, price, and EULA links. Ensure 'Delete Account' is possible. Answer Age Rating questionnaire accurately.",
+      "resources": [],
+      "status": "pending"
+    },
+    {
+      "id": 11,
+      "title": "App Review Information & Completeness",
+      "description": "Provide a screen recording, test accounts, and ensure app stability.",
+      "details": "In 'Notes', include: a screen recording from a physical device showing core flows (login, purchases, permissions), app purpose, test credentials, and a list of 3rd-party SDKs/services. MUST ensure app completeness: fully test on iPad, and hide any empty screens/broken buttons (e.g., an empty 'More Apps' screen) to avoid rejection.",
+      "resources": [],
+      "status": "pending"
+    },
+    {
+      "id": 12,
+      "title": "Testing and Publishing",
+      "description": "Test and await Apple review.",
+      "details": "Test with different Apple ID accounts via TestFlight. Click 'Create Test' in Kuika. After Apple's review process is complete, you will be notified. Release automatically or manually once approved.",
+      "resources": [],
+      "status": "pending"
+    },
+    {
+      "id": 13,
+      "title": "App Updates: App Store Connect Tasks",
+      "description": "What to do for subsequent updates.",
+      "details": "Write a clear 'What's New' summary. Provide detailed 'Notes' for App Review—explain exact changes, add screenshots for new workflows. Address outstanding third-party analytics/policies questions in notes if requested by review team.",
+      "resources": [],
+      "status": "pending"
+    },
+    {
+      "id": 14,
+      "title": "App Updates: Project & Testing",
+      "description": "Checks before pushing updates.",
+      "details": "Remove debug tools. Test all new features on supported iOS devices. Check onboarding, deep links, notifications. Migrate CloudKit schema to prod. Consider 'Phased Release'. Update Privacy Policy if data collection changed.",
+      "resources": [],
+      "status": "pending"
+    }
+  ],
+  "android": [
+    {
+      "id": 1,
+      "title": "Developer Account",
+      "description": "Pay the fee and set up payment profiles.",
+      "details": "Register at Google Play Console and pay the $25 one-time fee. Link a Google merchant account if you plan to sell digital goods or the app itself.",
+      "resources": [
+        { "label": "Play Console Setup", "url": "https://support.google.com/googleplay/android-developer/answer/6112435" }
+      ],
+      "status": "pending"
+    },
+    {
+      "id": 2,
+      "title": "Main Store Listing",
+      "description": "App Details, Feature Graphic, and Screenshots.",
+      "details": "Enter App Name (max 30 chars), Short Description (max 80 chars), and Full Description (max 4000 chars). Upload a High-res icon (512x512) and a Feature Graphic (1024x500). Add at least 2 screenshots.",
+      "resources": [
+        { "label": "Store Listing Guidelines", "url": "https://support.google.com/googleplay/android-developer/answer/9866151" }
+      ],
+      "status": "pending"
+    },
+    {
+      "id": 3,
+      "title": "Privacy Policy & Data Safety",
+      "description": "Fill out the Data Safety form.",
+      "details": "Provide a link to your privacy policy. Tell Google how your app collects, shares, and secures user data. Answer questions regarding user account deletion.",
+      "resources": [
+        { "label": "Data Safety Section", "url": "https://support.google.com/googleplay/android-developer/answer/10787469" }
+      ],
+      "status": "pending"
+    },
+    {
+      "id": 4,
+      "title": "Content Rating",
+      "description": "Complete the IARC questionnaire.",
+      "details": "Answer questions about the content of your app (violence, gambling, language, etc.) to receive age ratings for different regions.",
+      "resources": [
+        { "label": "Content Ratings", "url": "https://support.google.com/googleplay/android-developer/answer/188189" }
+      ],
+      "status": "pending"
+    },
+    {
+      "id": 5,
+      "title": "Target Audience & Content",
+      "description": "Declare if your app targets children.",
+      "details": "Specify your target age groups. App requirements change significantly if children are in your target audience (Designed for Families program compliance).",
+      "resources": [
+        { "label": "Target Audience Policy", "url": "https://support.google.com/googleplay/android-developer/answer/9859673" }
+      ],
+      "status": "pending"
+    },
+    {
+      "id": 6,
+      "title": "Testing Tracks (Optional/Required)",
+      "description": "Set up Closed or Open testing.",
+      "details": "If you are a new personal account developer, Google requires you to run a closed test with 20 testers for 14 continuous days before you can apply for production.",
+      "resources": [
+        { "label": "Testing Requirements", "url": "https://support.google.com/googleplay/android-developer/answer/14151465" }
+      ],
+      "status": "pending"
+    },
+    {
+      "id": 7,
+      "title": "Upload App Bundle (AAB)",
+      "description": "Upload your signed release build.",
+      "details": "Generate an Android App Bundle (.aab) signed with your release key. Upload it to the desired track to prepare for rollout.",
+      "resources": [
+        { "label": "App Release Preperation", "url": "https://developer.android.com/studio/publish/app-signing" }
+      ],
+      "status": "pending"
+    },
+    {
+      "id": 8,
+      "title": "Rollout & Publishing",
+      "description": "Submit updates to Google Play review.",
+      "details": "Go to the Publishing overview, review any pre-launch report warnings, and click 'Send XX changes for review'.",
+      "resources": [
+        { "label": "Publishing Overview", "url": "https://support.google.com/googleplay/android-developer/answer/9859348" }
+      ],
+      "status": "pending"
+    }
+  ]
+}
